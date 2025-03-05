@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Jazz Mooder</title>
+     <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+     <p id="close">X</p>
+     <p id="move"><span style="user-select: none;">◇</span></p>
+     <p id="close2"><span style="user-select: none;">--</span></p>
+
+     <p>Jazz player</p>
+
+     <canvas id="visualizer"></canvas>
+
+     <div class="bottomgroup">
+               <p class="songname">Jazz Song</p>
+
+          <audio id="audio" controls hidden>
+               <source src="./mummum.mp3" type="audio/mpeg">
+               Your browser does not support the audio element.
+          </audio>
+          <div id="timeline" onclick="seek(event)">
+               <div id="progress"></div>
+          </div>
+          <button id="playButton" onclick="togglePlay()">
+               <img src="./files/caret-right-svgrepo-com.svg" id="buttonicon" alt="" draggable="false">
+          </button>
+     </div>
+      
+
+     <script src="./script.js"></script>
+</body>
+
+</html>
